@@ -45,7 +45,6 @@ h2 {
 
 .text-under-head {
     font-size: 30px;
-    width: 665px;
     margin-bottom: 25px;
 }
 
@@ -57,10 +56,6 @@ h2 {
     border-radius: 20px;
 }
 
-.info {
-    margin: 0 100px;
-}
-
 .btn {
     display: inline-block;
     font-size: 18px;
@@ -69,7 +64,6 @@ h2 {
     font-weight: bold;
     border-color: #f4d633;
     border-radius: 35px;
-    background-color: #2a5089;
     border-radius: 35px;
     padding: 20px 25px;
     border: 3px solid #f4d633;
@@ -100,13 +94,14 @@ h1 {
 
 .header-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .contact {
     display: flex;
     gap: 9px;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .main {
@@ -115,36 +110,43 @@ h1 {
 
 .background-block {
     max-height: 100vh;
-    background: #f5f5f5 url(../img/phone_manager.webp) no-repeat center/cover ;
+    background: #f5f5f5 url(../img/phone_manager.webp) no-repeat center/cover;
 }
+
 .footer {
     background-color: #f4d633;
     padding: 7px 0;
 }
-.footer-elements{
+
+.footer-elements {
     display: flex;
     justify-content: space-between;
-    margin-top: 27px;
-    margin: 0 50px;
+    display: flex;
+    align-items: center;
 }
 
 .logo-footer {
     height: 37px;
     width: 167px;
 }
-.footer p,.footer a, .footer {
+
+.footer p,
+.footer a,
+.footer {
     color: #1e3c6f;
     font-weight: bold;
 }
+
 .images {
     display: flex;
     gap: 10px;
 }
+
 .sinse-2025 {
     font-size: 12px;
     text-align: right;
-    margin-top: 0;
 }
+
 .schedule {
     font-size: 16px;
     line-height: 14px;
