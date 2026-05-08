@@ -1,5 +1,15 @@
-.body {
-    padding: 0;
+body,
+li,
+ol,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
     margin: 0;
 }
 
@@ -10,7 +20,6 @@
 .logo-header {
     height: 37px;
     width: 167px;
-    margin-top: 23px;
 }
 
 ul,
@@ -36,6 +45,11 @@ h2 {
 
 }
 
+.info {
+    display: flex; 
+    align-items: center;
+}
+
 .text-above-head {
     font-size: 16px;
     font-style: italic;
@@ -43,6 +57,11 @@ h2 {
 
 .text-under-head {
     font-size: 30px;
+    padding:0 0 25px;
+}
+
+.stars{
+    padding: 32px 0 0;
 }
 
 .ul-header {
@@ -69,13 +88,10 @@ h2 {
 .stars {
     display: flex;
     gap: 8px;
-    margin-top: 12px;
 }
 
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 13px;
     font-size: 48px;
     width: 687px;
     font-weight: 800;
@@ -103,11 +119,12 @@ h1 {
 
 .main {
     padding: 15px 0;
+    min-height: 85vh;
 }
 
 .background-block {
     max-height: 100vh;
-    background: #f5f5f5 url(../img/phone_manager.webp) no-repeat center/cover;
+    background-image: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
 }
 
 .footer {
@@ -145,6 +162,9 @@ h1 {
 }
 
 .schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     font-size: 16px;
     line-height: 14px;
 }
