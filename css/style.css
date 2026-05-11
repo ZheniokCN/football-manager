@@ -118,13 +118,28 @@ h1 {
 }
 
 .main {
-    padding: 15px 0;
+    padding: 0;
     min-height: 85vh;
+    position: relative;
+}
+
+.img-bl{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 85vh;
+}
+
+.img-bl img{
+    object-fit: cover;
+    height: 85vh;
+    width: 100%;
 }
 
 .background-block {
     max-height: 100vh;
-    background-image: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
+    background: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
 }
 
 .footer {
