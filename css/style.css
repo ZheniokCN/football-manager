@@ -5,6 +5,10 @@ body{
     justify-content: space-between;
 }
 
+a,
+img{
+    cursor: url(../cursors/cursor-ball.cur), auto;
+}
 
 body,
 li,
@@ -247,9 +251,4 @@ h1 {
     flex-direction: column;
     gap: 14px;
     line-height: 14px;
-}
-
-a,
-img{
-    cursor: url(../cursors/cursor-ball.cur), pointer;
 }
