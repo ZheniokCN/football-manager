@@ -1,5 +1,5 @@
 body{
-    cursor: url(../cursors/pointer.cur), default;
+    cursor: url(../cursors/cursor.cur), default;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7,7 +7,7 @@ body{
 
 a,
 img{
-    cursor: url(../cursors/cursor-ball.cur), auto;
+    cursor: url(../cursors/cursor-ball.cur), default;
 }
 
 body,
