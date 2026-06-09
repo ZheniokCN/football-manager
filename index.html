@@ -10,21 +10,20 @@
 </head>
 
 <body>
+    <div class="dark-bgc"></div>
     <div class="background-block">
         <header class="header">
             <nav class="wrapper header-wrapper">
                 <picture class="logo-header">
                     <a href="/"><img src="img/лого.png" alt="logo"></a>
                 </picture>
-                <div>
-                    <ul class="ul-header">
-                        <li><a href="#">Про нас</a></li>
-                        <li><a href="#">Контакти</a></li>
-                        <li><a href="#">Івенти</a></li>
-                        <li><a href="#">Групи</a></li>
-                    </ul>
-                    <picture class="burger"><img src="img/burger.svg" alt="burger"></picture>
-                </div>
+                <ul class="menu">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Івенти</a></li>
+                    <li><a href="#">Групи</a></li>
+                    <li class="cancel">x</li>
+                </ul>
                 <div class="contact">
                     <p class="number"><a href="tel:+380505055055">
                             <picture class="phone">
@@ -35,6 +34,7 @@
                         </a>
                     </p>
                 </div>
+                <picture class="burger"><img src="img/burger.svg" alt="burger"></picture>
             </nav>
         </header>
         <main class="main">
@@ -84,6 +84,24 @@
             </div>
         </nav>
     </footer>
+    <script>
+        const dark = document.querySelector(".dark-bgc"),
+            burger = document.querySelector(".burger"),
+            menu = document.querySelector(".menu"),
+            cancel = document.querySelector(".cancel")
+
+        burger.addEventListener("click", function () {
+            menu.style.left = "0";
+            dark.style.display = "block"
+        })
+
+        function cancelBurger() {
+            menu.style.left = "-100%";
+            dark.style.display = "none"
+        }
+        cancel.addEventListener("click", cancelBurger)
+        dark.addEventListener("click", cancelBurger)
+    </script>
 </body>
 
 </html>
