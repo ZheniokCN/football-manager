@@ -162,8 +162,11 @@ h2 {
 }
 
 .menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     transition: 0.25s;
-    font-size: 18rem;
+    font-size: 22rem;
     line-height: 30rem;
     text-transform: uppercase;
 }
@@ -352,12 +355,20 @@ img {
 }
 
 @media screen and (min-width:530px) {
+    .cancel{
+        display: none;
+    }
 
     .menu {
         min-width: none;
         display: flex;
+        flex-direction: row;
         position: static;
         justify-content: space-between;
+    }
+
+    .menu li {
+        font-size: 18rem;
     }
 
     .burger {
