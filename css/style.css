@@ -3,20 +3,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
 }
 
 html {
-    font-size: 0.60px;
-}
-
-p,
-li,
-a,
-h1,
-ul,
-ol {
-    position: relative;
-    z-index: 3;
+    font-size: 0.75px;
 }
 
 a,
@@ -96,7 +87,7 @@ h2 {
 .info {
     display: flex;
     align-items: center;
-    min-height: 55vh;
+    min-height: 92vh;
 }
 
 .info-bg {
@@ -133,8 +124,8 @@ h2 {
 }
 
 .menu {
-    min-width: 50%;
-    min-height: 57vh;
+    min-width: 80vw;
+    min-height: 93vh;
     background-color: #4c6488;
     position: fixed;
     display: flex;
@@ -150,14 +141,6 @@ h2 {
     transition: 0.3S;
 }
 
-.menu li .cancel {
-    display: block;
-    position: absolute;
-    z-index: 24;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
-}
 
 .burger {
     background-color: #4c6488;
@@ -187,15 +170,14 @@ h2 {
 .menu .item-menu .link-menu {
     line-height: 31rem;
     transition: 0.25s;
-    font-size: 30rem;
+    font-size: 50rem;
     padding-bottom: 3px;
-    border-bottom: 2px solid transparent;
+    display: block;
 }
 
 .menu .item-menu .link-menu:hover {
-    background-color: rgba(0, 0, 255, 0.15);
-    padding: 5px 10px;
-    border-radius: 7px;
+    padding-left: 30px;
+    transform: scale(1.1);
 }
 
 .btn {
@@ -271,10 +253,6 @@ h1 {
     object-fit: cover;
 }
 
-.background-block {
-    background: radial-gradient(circle at center, #34619d 0%, #34619d 1%, #1d3b6e 100%);
-}
-
 .footer {
     background-color: #f4d633;
     padding: 14rem 0;
@@ -324,7 +302,7 @@ h1 {
     transform: scale(1.1);
 }
 
-.images li a img {
+.images li a img, .phone{
     min-width: 35rem;
 }
 
@@ -340,13 +318,72 @@ h1 {
     gap: 14rem;
     line-height: 14rem;
 }
-
 img {
     width: 100%;
 }
 
+ul.menu li.cancel {
+    font-size: 50rem;
+    position: absolute;
+    z-index: 25;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+@media screen and (min-width:750px) {
+    
+    .header-wrapper, .wrapper{
+        max-width: 1201rem;
+        margin: 0 auto;
+    }
+    
+    .header-wrapper .menu {
+        min-width: 326rem;
+        min-height: 0;
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: center;
+        border-radius: 20rem;
+        font-size: 14rem;
+        align-items: center;
+        padding: 4.5rem 56rem;
+    }
+    
+    .menu .item-menu {
+        border-bottom: none;
+        padding: 0;
+        min-height: 0;
+    }
+    
+    .menu .item-menu .link-menu{
+        font-size: 14rem;
+        padding: 0;
+        min-height: 0;
+    }
+    
+    .burger {
+        display: none;
+    }
 
-@media screen and (min-width:850px) {
+    .cancel {
+        display: none;
+    }
+
+    .menu .cancel {
+        display: none;
+    }
+
+    .menu .item-menu .link-menu:hover {
+        padding: 0;
+        
+    }
+    html {
+        font-size: 0.80px;
+    }
+}
+
+@media screen and (min-width:920px) {
     html {
         font-size: 1px;
     }
@@ -361,59 +398,31 @@ img {
     }
 }
 
-@media screen and (min-width:757px) {
+@media screen and (min-width:1500px){
     html {
-        font-size: 0.75px;
+        font-size: 1.2px;
     }
-}
+} 
 
-@media screen and (min-width:650px) {
-
-    .header-wrapper .menu {
-        min-width: 50%;
-        min-height: 0;
-        display: flex;
-        flex-direction: row;
-        position: static;
-        justify-content: space-between;
-        border-radius: 20px;
-        align-items: center;
-        padding: 15px 20px;
-    }
-
-    .menu .item-menu {
-        border-bottom: none;
-        padding: 0;
-        min-height: 0;
-    }
-
-    .menu .item-menu .link-menu{
-        font-size: 18rem;
-        padding: 0;
-        min-height: 0;
-    }
-
-    .burger {
-        display: none;
-    }
-
-    .cancel {
-        display: none;
-    }
-
-    .menu .cancel {
-        display: none;
-    }
-}
-
-@media screen and (min-width:1850px) {
+@media screen and (min-width:1500px) {
     html {
         font-size: 1.5px;
     }
 
     .logo-header,
     .logo-footer {
-        min-width: 200rem;
+        min-width: 230rem;
         max-width: 267rem;
+    }
+}
+
+@media screen and (min-width:3000px){
+    html {
+        font-size: 2.5px;
+    }
+    .logo-footer,
+    .logo-header{
+        min-width: 260rem;
+        max-width: 307rem;
     }
 }
