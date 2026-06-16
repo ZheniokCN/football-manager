@@ -13,20 +13,20 @@
     <div class="dark-bgc"></div>
     <div class="background-block">
         <header class="header">
-            <nav class="wrapper header-wrapper">
-                <picture class="logo-header">
-                    <a href="/"><img src="img/лого.png" alt="logo"></a>
+            <nav class="wrapper header__wrapper">
+                <picture class="logo-header header__logo">
+                    <a class="logo-header__link link" href="/"><img class="logo-header__img" src="img/лого.png" alt="logo"></a>
                 </picture>
-                <ul class="menu">
-                    <li class="item-menu"><a class="link-menu" href="#">Про нас</a></li>
-                    <li class="item-menu"><a class="link-menu" href="#">Контакти</a></li>
-                    <li class="item-menu"><a class="link-menu" href="#">Івенти</a></li>
-                    <li class="item-menu"><a class="link-menu" href="#">Групи</a></li>
-                    <li class="cancel">x</li>
+                <ul class="header__menu menu">
+                    <li class="item-menu menu__item"><a class="link-menu" href="#">Про нас</a></li>
+                    <li class="item-menu menu__item"><a class="link-menu" href="#">Контакти</a></li>
+                    <li class="item-menu menu__item"><a class="link-menu" href="#">Івенти</a></li>
+                    <li class="item-menu menu__item"><a class="link-menu" href="#">Групи</a></li>
+                    <li class="menu__item menu__item--cancel cancel">x</li>
                 </ul>
-                <div class="contact">
-                    <p class="number"><a href="tel:+380505055055">
-                            <picture class="phone">
+                <div class="header__contact contact">
+                    <p class="contact__number number"><a class="contact__link" href="tel:+380505055055">
+                            <picture class="contact__phone phone">
                                 <source srcset type="img/phone.png">
                                 <img src="img/phone.svg" alt="#">
                             </picture>
@@ -34,7 +34,7 @@
                         </a>
                     </p>
                 </div>
-                <picture class="burger"><img src="img/burger.svg" alt="burger"></picture>
+                <picture class="header__burger burger"><img src="img/burger.svg" alt="burger"></picture>
             </nav>
         </header>
         <main class="main">

@@ -218,7 +218,7 @@ h1 {
     margin: 0 auto;
 }
 
-.header-wrapper {
+.header__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -332,11 +332,11 @@ ul.menu li.cancel {
 }
 @media screen and (min-width:750px) {
     
-    .header-wrapper, .wrapper{
+    .header__wrapper, .wrapper{
         max-width: 1201rem;
     }
     
-    .header-wrapper .menu {
+    .header__wrapper .menu {
         min-width: 326rem;
         min-height: 0;
         display: flex;
