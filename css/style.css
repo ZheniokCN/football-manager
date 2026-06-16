@@ -7,7 +7,7 @@ body {
 }
 
 html {
-    font-size: 0.75px;
+    font-size: 0.60px;
 }
 
 a,
@@ -97,6 +97,7 @@ h2 {
     z-index: 1;
     border-radius: 25px;
     max-height: 463px;
+    max-width: 687rem;
 }
 
 .text-above-head {
@@ -136,7 +137,7 @@ h2 {
     top: 0;
     z-index: 21;
     transition: all .5s ease;
-    border-radius: 0 0 20rem;
+    border-radius: 0 0 20%;
     padding: 60rem 30rem;
     transition: 0.3S;
 }
@@ -184,7 +185,7 @@ h2 {
     color: #f4d633;
     border: 3px solid #f4d633;
     border-color: #f4d633;
-    border-radius: 35px;
+    border-radius: 35rem;
     font-size: 18rem;
     display: inline-block;
     font-weight: bold;
@@ -334,7 +335,6 @@ ul.menu li.cancel {
     
     .header-wrapper, .wrapper{
         max-width: 1201rem;
-        margin: 0 auto;
     }
     
     .header-wrapper .menu {
@@ -392,21 +392,20 @@ ul.menu li.cancel {
         background: none;
         border: none;
     }
-
-    .info {
-        min-height: 85vh;
-    }
 }
 
 @media screen and (min-width:1500px){
     html {
         font-size: 1.2px;
     }
+    .info{
+        min-height: 92vh;
+    }
 } 
 
 @media screen and (min-width:1500px) {
     html {
-        font-size: 1.5px;
+        font-size: 1.50px;
     }
 
     .logo-header,
